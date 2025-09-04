@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+header{
+    background: #333;
+    color: antiquewhite;
+    padding: 1rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: azure;
+}
+.hero{
+    text-align: center;
+    padding: 2rem;
+}
+.hero img{
+    width: 200px;
+    border-radius: 50%;
+}
+section{
+    padding: 2rem;
+}
+.timeline{
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+}
+.event{
+    min-width: 200px;
+    padding: 1rem;
+    background: gray;
+    border-radius: 10px;
+}
+button{
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+button:hover{
+    background: #e68900;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+/* Responsive */
+@media (max-width: 768px) {
+nav ul {
+    flex-direction: column;
+}    
+}
+.hero img {
+    animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.root {
+    --bg:white;
+    --text:black;
+}
+body.dark {
+   --bg:black;
+   --text:white;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+.project-card{
+    background: #fff;
+    padding: 1 rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
